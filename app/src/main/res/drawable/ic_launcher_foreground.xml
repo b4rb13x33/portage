@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Two chevrons pointing right: "carrying across" -->
+    <path
+        android:fillColor="#7FD1FF"
+        android:pathData="M40,34 L58,54 L40,74 L33,67 L44,54 L33,41 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,34 L80,54 L62,74 L55,67 L66,54 L55,41 Z" />
+</vector>
