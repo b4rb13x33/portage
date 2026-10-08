@@ -25,6 +25,8 @@ the decision itself; when reversing one, update the row rather than deleting it.
 | T6 | **`ProviderAdapter` interface** | New providers are additive. The interface is the contract that makes T5's parsing per-provider instead of per-call-site. |
 | T7 | **Direct device → provider calls** | Hard constraint. Our servers never see user keys or conversation content. This is also the privacy selling point. |
 | T8 | **LiteRT-LM or ML Kit GenAI for on-device; MediaPipe LLM Inference is maintenance-only** | Do not build the M4 architecture on a maintenance-mode dependency. |
+| T9 | **`usesCleartextTraffic="true"` for now** | Local and LAN Ollama endpoints are `http://`, and a loopback-only `network-security-config` would break the LAN case. This is temporary: replace with an opt-in per-host exception (or config toggle) before Play submission, and document that cloud providers are always HTTPS. |
+| T10 | **Declare `material-icons-core` explicitly** | Material3 no longer puts it on the compile classpath transitively; navigation and delete affordances need it. Core only — extended icons would be a dead-weight dependency for two glyphs. |
 
 ## Build / tooling
 
